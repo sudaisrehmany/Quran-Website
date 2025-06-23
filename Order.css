@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat','sans-serif';
+}
+body{
+    background:url(./Screenshot_2023_0617_085720.jpg);
+    padding: 0 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125) ;
+} 
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color:rgb(6,187,204);
+    text-transform: uppercase;
+    text-align: center;
+}
+.wrapper .form{
+    width: 100%;
+}
+.wrapper .form .input-field{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+.wrapper .form .input-field label{
+    width: 200px;
+    color: black;
+    margin-right: 10px;
+    font-size: 14px; 
+}
+.wrapper .form .input-field .input,
+.wrapper .form .input-field .textarea{
+
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transform: all 0.3s ease ;
+}
+.wrapper .form .input-field .textarea{
+    
+    height: 100px;
+}
+.wrapper .form .input-field .input:focus,
+.wrapper .form .input-field .textarea:focus
+{
+    border: 1px solid rgb(6,187,204)
+}
+.wrapper .form .input-field .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background:rgb(6,187,204);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+.wrapper .form .input-field:last-child{
+    margin-bottom: 0;
+}
+.wrapper .form .input-field .btn:hover{
+    background:rgb(6,187,204);
+}
+a{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 0;
+    background:rgb(6,187,204);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+ input.radio{
+    margin-right: 5px;
+    margin-left: 17px;
+    
+}
+
+.gender-category {
+    margin: 14px -61px;
+    color: white;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}
+
+.gender-category label,
+.gender-category input,
+.form-submit-btn input{
+    cursor: pointer;
+}
+
+@media (max-width: 420px) {
+    .wrapper .form .input-field{
+    flex-direction: column;
+    align-items: flex-start;
+    }
+    .wrapper .form .input-field label{
+        margin-bottom: 5px;
+    }
+    body{
+        background-size: 2000px;
+    }
+    .wrapper .form .gender-details{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 20px;
+        height: 20px;
+    }
+}
+@media(max-width:992px) and (min-width:481px){
+    body{
+        background-size: 2000px;
+    }
+}
